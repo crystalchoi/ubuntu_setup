@@ -1,0 +1,15 @@
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+foreground-color='rgb(255,255,255)'
+visible-name='crystal'
+palette=['rgb(23,20,33)', 'rgb(214,149,153)', 'rgb(193,228,212)', 'rgb(240,161,241)', 'rgb(150,185,228)', 'rgb(224,168,237)', 'rgb(42,161,179)', 'rgb(208,207,204)', 'rgb(94,92,100)', 'rgb(246,97,81)', 'rgb(107,228,228)', 'rgb(233,173,12)', 'rgb(151,187,230)', 'rgb(226,183,231)', 'rgb(51,199,222)', 'rgb(255,255,255)']
+cursor-background-color='rgb(224,101,225)'
+cursor-colors-set=true
+highlight-colors-set=true
+use-theme-colors=false
+cursor-foreground-color='rgb(199,178,178)'
+bold-color-same-as-fg=false
+bold-color='rgb(230,233,64)'
+background-color='rgb(38,46,48)'
+audible-bell=false
+highlight-background-color='rgb(67,129,159)'
+highlight-foreground-color='rgb(182,232,176)'
