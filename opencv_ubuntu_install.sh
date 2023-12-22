@@ -10,7 +10,7 @@ sudo apt -y install libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-d
 
 # by crystal 
 sudo apt -y install libgtkglext1
-sudo apt install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+sudo apt install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev -y
 
 sudo snap install openjdk
 

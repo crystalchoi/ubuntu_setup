@@ -79,7 +79,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting sudo fzf )
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting sudo fzf autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,21 +115,33 @@ alias l='\ls --color=tty -CF'
 alias lr='\ls --color=tty -alRF'
 alias lt='\ls --color=tty -altrF'
 alias h='history -n'
-alias j='jobs -l'
+alias jobs='jobs -l'
 alias rm='rm -i'
 alias vi='vim'
+alias clion='clion.sh &'
 alias gnome_terminal_profile_export=' dconf dump /org/gnome/terminal/legacy/profiles:/ > ~/Downloads/ubuntu_setup/gnome-terminal-profiles.dconf'
 
 alias gnome_terminal_profile_import='dconf load /org/gnome/terminal/legacy/profiles:/ < ~/Downloads/ubuntu_setup/gnome-terminal-profiles.dconf'
 
-alias intellij='/opt/idea-IC-233.11799.241/bin/idea.sh'
+
+#stty intr \^B 
+#stty intr \001  #^A 
+
+#cd() { builtin cd "$@" &&  \ls --color=tty -CF }
+
+function chpwd() {
+    #emulate -L zsh
+    \ls --color=tty -CF
+}
 
 
-cd() { builtin cd "$@" &&  \ls --color=tty -CF }
 
-CLION_HOME=/opt/clion-2023.3
+CLION_HOME=/opt/clion-2023.3.1
+IDEA_HOME=/opt/idea-IC-233.11799.300
+LOCALTOOLS_HOME=/home/crystal/.local
 MINIFORGE_HOME=/home/crystal/miniforge3 
-export PATH="$PATH:$CLION_HOME/bin:$MINIFORGE_HOME/bin"
+export PATH="$PATH:$CLION_HOME/bin:$IDEA_HOME/bin:$MINIFORGE_HOME/bin:$LOCALTOOLS_HOME/bin"
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh 
 source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme

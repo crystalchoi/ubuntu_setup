@@ -1,3 +1,24 @@
+[/]
+default='43dcdbf0-0731-40d1-b38d-1ae2cbf84b78'
+list=['43dcdbf0-0731-40d1-b38d-1ae2cbf84b78']
+
+[:43dcdbf0-0731-40d1-b38d-1ae2cbf84b78]
+background-color='rgb(33,34,43)'
+bold-color='rgb(170,121,237)'
+bold-color-same-as-fg=false
+cursor-background-color='rgb(238,26,159)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(215,184,215)'
+default-size-columns=100
+default-size-rows=40
+foreground-color='#F8F8F2'
+highlight-background-color='rgb(60,68,116)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(151,238,98)'
+palette=['rgb(229,65,65)', 'rgb(229,183,216)', 'rgb(207,230,196)', 'rgb(232,237,175)', 'rgb(216,194,237)', 'rgb(239,170,170)', 'rgb(117,215,236)', 'rgb(236,210,181)', 'rgb(122,122,122)', 'rgb(255,121,198)', 'rgb(80,250,123)', 'rgb(241,250,140)', 'rgb(189,147,249)', 'rgb(255,85,85)', 'rgb(139,233,253)', 'rgb(208,35,151)']
+use-theme-colors=false
+visible-name='Dracula'
+
 [:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 audible-bell=true
 background-color='rgb(23,26,27)'
