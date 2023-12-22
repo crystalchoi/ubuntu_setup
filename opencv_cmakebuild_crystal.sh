@@ -4,6 +4,8 @@
 # sudo apt-get install qtcreator
 # sudo apt-get -y install qt5-default 
 # sudo apt-get install openexr
+# sudo apt-get install libglx-dev  # for OpenGL ON
+# sudo apt install libgtk3.0-cil-dev
 
 cmake \
     -D CMAKE_BUILD_TYPE=Release \
@@ -14,6 +16,7 @@ cmake \
     -D BUILD_opencv_world=OFF \
     -D BUILD_SHARED_LIBS=ON \
     -D BUILD_NEW_PYTHON_SUPPORT=ON \
+    -D BUILD_JAVA=ON \
     -D INSTALL_PYTHON_EXAMPLES=ON \
     -D OPENCV_ENABLE_NONFREE=ON \
     -D OPENCV_GENERATE_PKGCONFIG=ON \
@@ -24,14 +27,16 @@ cmake \
     -D PYTHON_DEFAULT_EXECUTABLE=/usr/bin/python3 \
     -D WITH_TBB=ON \
 	-D WITH_V4L=ON  \
+	-D WITH_GTK=OFF \
 	-D WITH_QT=ON \
-	-D WITH_GTK=ON \
 	-D WITH_OPENGL=ON \
-	-D WITH_XINE=ON \
+    -D HIGHGUI_PLUGIN_LIST=all \
     -D VTK_DIR=/home/crystal/dev/tools/VTK/build \
     ../src/
 
 	#-DCMAKE_CXX_FLAGS="--param ggc-min-expand=20" \
+	#-D WITH_XINE=ON \
+	#-D WITH_GTK_2_X=ON \
 
 
 # $ echo '/usr/local/lib' | sudo tee --append /etc/ld.so.conf.d/opencv.conf
