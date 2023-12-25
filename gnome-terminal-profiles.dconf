@@ -1,38 +1,17 @@
 [/]
-default='43dcdbf0-0731-40d1-b38d-1ae2cbf84b78'
-list=['43dcdbf0-0731-40d1-b38d-1ae2cbf84b78']
+default='25ace393-cb11-465a-a394-8be919dd9ab1'
+list=['25ace393-cb11-465a-a394-8be919dd9ab1']
 
-[:43dcdbf0-0731-40d1-b38d-1ae2cbf84b78]
-background-color='rgb(33,34,43)'
-bold-color='rgb(170,121,237)'
+[:25ace393-cb11-465a-a394-8be919dd9ab1]
+background-color='#282A36'
+bold-color='rgb(67,233,206)'
 bold-color-same-as-fg=false
-cursor-background-color='rgb(238,26,159)'
+cursor-background-color='rgb(230,35,233)'
 cursor-colors-set=true
-cursor-foreground-color='rgb(215,184,215)'
-default-size-columns=100
-default-size-rows=40
 foreground-color='#F8F8F2'
-highlight-background-color='rgb(60,68,116)'
+highlight-background-color='rgb(58,73,84)'
 highlight-colors-set=true
-highlight-foreground-color='rgb(151,238,98)'
-palette=['rgb(229,65,65)', 'rgb(229,183,216)', 'rgb(207,230,196)', 'rgb(232,237,175)', 'rgb(216,194,237)', 'rgb(239,170,170)', 'rgb(117,215,236)', 'rgb(236,210,181)', 'rgb(122,122,122)', 'rgb(255,121,198)', 'rgb(80,250,123)', 'rgb(241,250,140)', 'rgb(189,147,249)', 'rgb(255,85,85)', 'rgb(139,233,253)', 'rgb(208,35,151)']
+highlight-foreground-color='rgb(255,255,255)'
+palette=['rgb(38,38,38)', 'rgb(238,193,219)', 'rgb(143,239,167)', 'rgb(229,235,168)', 'rgb(174,218,230)', 'rgb(230,71,71)', 'rgb(117,215,236)', 'rgb(234,213,190)', 'rgb(122,122,122)', 'rgb(255,121,198)', 'rgb(80,250,123)', 'rgb(241,250,140)', 'rgb(189,147,249)', 'rgb(255,85,85)', 'rgb(139,233,253)', 'rgb(255,184,108)']
 use-theme-colors=false
-visible-name='Dracula'
-
-[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-audible-bell=true
-background-color='rgb(23,26,27)'
-bold-color='rgb(230,233,64)'
-bold-color-same-as-fg=false
-cursor-background-color='rgb(224,101,225)'
-cursor-colors-set=true
-cursor-foreground-color='rgb(199,178,178)'
-font='Source Code Pro for Powerline Semi-Bold 10'
-foreground-color='rgb(255,255,255)'
-highlight-background-color='rgb(67,129,159)'
-highlight-colors-set=true
-highlight-foreground-color='rgb(182,232,176)'
-palette=['rgb(23,20,33)', 'rgb(214,149,153)', 'rgb(193,228,212)', 'rgb(240,161,241)', 'rgb(150,185,228)', 'rgb(224,168,237)', 'rgb(42,161,179)', 'rgb(208,207,204)', 'rgb(94,92,100)', 'rgb(246,97,81)', 'rgb(107,228,228)', 'rgb(233,173,12)', 'rgb(151,187,230)', 'rgb(226,183,231)', 'rgb(51,199,222)', 'rgb(255,255,255)']
-use-system-font=false
-use-theme-colors=false
-visible-name='crystal'
+visible-name='Default'
