@@ -135,13 +135,20 @@ function chpwd() {
 }
 
 
-
 CLION_HOME=/opt/clion-2023.3.1
 IDEA_HOME=/opt/idea-IC-233.11799.300
 LOCALTOOLS_HOME=/home/crystal/.local
 MINIFORGE_HOME=/home/crystal/miniforge3 
 export PATH="$PATH:$CLION_HOME/bin:$IDEA_HOME/bin:$MINIFORGE_HOME/bin:$LOCALTOOLS_HOME/bin"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+
+
+
+# start for autojump plugin
+[[ -s /home/crystal/.autojump/etc/profile.d/autojump.sh ]] && source /home/crystal/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
+# end for autojump plugin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh 
 source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
