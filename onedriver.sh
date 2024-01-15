@@ -1,8 +1,9 @@
-MOUNTPOINT=${HOME}/Documents/onedrive
+MOUNTPOINT=${HOME}/Documents/onedriveNew
 
 # create the mountpoint and determine the service name
 #mkdir -p $MOUNTPOINT
 export SERVICE_NAME=$(systemd-escape --template onedriver@.service --path $MOUNTPOINT)
+echo ${SERVICE_NAME}
 
 # mount onedrive
 systemctl --user daemon-reload
