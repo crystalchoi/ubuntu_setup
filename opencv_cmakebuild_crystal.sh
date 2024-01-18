@@ -12,6 +12,7 @@ cmake \
     -D CMAKE_INSTALL_PREFIX=/usr/local \
     -D BUILD_WITH_DEBUG_INFO=OFF \
     -D BUILD_EXAMPLES=ON \
+    -D BUILD_SAMPLES=ON \
     -D BUILD_opencv_python3=ON \
     -D BUILD_opencv_world=OFF \
     -D BUILD_SHARED_LIBS=ON \
