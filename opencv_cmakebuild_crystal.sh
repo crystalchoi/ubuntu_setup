@@ -24,8 +24,8 @@ cmake \
     -D OPENCV_GENERATE_PKGCONFIG=ON \
     -D OPENCV_FORCE_3RDPARTY_BUILD=ON \
     -D OPENCV_SKIP_PYTHON_LOADER=ON \
-    -D PYTHON3_PACKAGES_PATH=/usr/lib/python3/dist-packages \
-    -D PYTHON_DEFAULT_EXECUTABLE=/usr/bin/python3 \
+    -DPYTHON_INCLUDE_DIR=$(python3 -c "from distutils.sysconfig import get_python_inc; print(get_python_inc())")  \
+-DPYTHON_LIBRARY=$(python3 -c "import distutils.sysconfig as sysconfig; print(sysconfig.get_config_var('LIBDIR'))") \
 	-D WITH_V4L=ON  \
 	-D WITH_GTK=ON \
 	-D WITH_QT=ON \
@@ -41,6 +41,8 @@ cmake \
     ../src/
 
 	#-DCMAKE_CXX_FLAGS="--param ggc-min-expand=20" \
+    #-D PYTHON3_PACKAGES_PATH=/usr/lib/python3/dist-packages \  #for globally 
+    #-D PYTHON_DEFAULT_EXECUTABLE=/usr/bin/python3 \
 	#-D WITH_XINE=ON \
 	#-D WITH_GTK_2_X=ON \
     	#-D WITH_TBB=ON \
